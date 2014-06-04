@@ -6,23 +6,21 @@
   <name>Jackson2 GeoJson</name>
   
   <scm>
-    <connection>scm:git:git@github.com:bedatadriven/jackson-geojson.git</connection>
-    <url>scm:git:git@github.com:bedatadriven/jackson-geojson.git</url>
-    <developerConnection>scm:git:git@github.com:bedatadriven/jackson-geojson.git</developerConnection>
+    <connection>scm:git:git@github.com:conveyal/jackson2-geojson.git</connection>
+    <url>scm:git:git@github.com:conveyal/jackson2-geojson.git</url>
+    <developerConnection>scm:git:git@github.com:conveyal/jackson2-geojson.git</developerConnection>
   </scm>
 
-  <distributionManagement>
-    <repository>
-      <id>bedatadriven-oss</id>
-      <name>bedatadriven Open-Source releases</name>
-      <url>http://nexus.bedatadriven.com/content/repositories/oss-releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>bedatadriven-oss</id>
-      <name>bedatadriven Open-Source snapshots</name>
-      <url>http://nexus.bedatadriven.com/content/repositories/oss-snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
+<distributionManagement>
+ <repository>
+  <id>conveyal.maven.release</id>
+  <url>s3://maven.conveyal.com/release</url>
+ </repository>
+ <snapshotRepository>
+  <id>conveyal.maven.snapshot</id>
+  <url>s3://maven.conveyal.com/snapshot</url>
+ </snapshotRepository>
+</distributionManagement>
 
   <dependencies>
     <dependency>
