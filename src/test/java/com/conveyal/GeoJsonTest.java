@@ -1,4 +1,4 @@
-package com.bedatadriven;
+package com.conveyal;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.bedatadriven.geojson.GeoJsonModule;
+import com.conveyal.geojson.GeoJsonModule;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryCollection;

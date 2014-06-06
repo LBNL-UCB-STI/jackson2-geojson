@@ -1,4 +1,4 @@
-package com.bedatadriven.geojson;
+package com.conveyal.geojson;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;

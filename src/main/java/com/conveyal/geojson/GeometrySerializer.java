@@ -1,4 +1,4 @@
-package com.bedatadriven.geojson;
+package com.conveyal.geojson;
 
 import java.io.IOException;
 
