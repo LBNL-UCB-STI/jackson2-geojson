@@ -2,9 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.conveyal</groupId>
   <artifactId>jackson2-geojson</artifactId>
-  <version>0.8</version>
+  <version>0.9</version>
   <name>Jackson2 GeoJson</name>
-  <description>Forked version of bedatadriven/jackson-geojson to support Jackons 2</description> 
+  <description>Forked version of bedatadriven/jackson-geojson to support Jackon 2</description>
  
   <scm>
     <connection>scm:git:git@github.com:conveyal/jackson2-geojson.git</connection>
@@ -14,25 +14,21 @@
 
 <distributionManagement>
  <repository>
-  <id>conveyal.maven.release</id>
-  <url>s3://maven.conveyal.com/release</url>
+  <id>conveyal-maven-repo</id>
+  <url>s3://maven.conveyal.com/</url>
  </repository>
- <snapshotRepository>
-  <id>conveyal.maven.snapshot</id>
-  <url>s3://maven.conveyal.com/snapshot</url>
- </snapshotRepository>
 </distributionManagement>
 
   <dependencies>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.3.2</version>
+      <version>2.6.1</version>
     </dependency>
     <dependency>
-      <groupId>com.vividsolutions</groupId>
-      <artifactId>jts</artifactId>
-      <version>1.13</version>
+      <groupId>org.locationtech.jts</groupId>
+      <artifactId>jts-core</artifactId>
+      <version>1.16.0</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -43,15 +39,14 @@
   </dependencies>
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.1</version>
-        <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
-        </configuration>
-      </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <release>11</release>
+            </configuration>
+        </plugin>
     </plugins>
  <extensions>
   <extension>
