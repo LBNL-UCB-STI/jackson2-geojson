@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.conveyal</groupId>
   <artifactId>jackson2-geojson</artifactId>
-  <version>0.9</version>
+  <version>0.10</version>
   <name>Jackson2 GeoJson</name>
   <description>Forked version of bedatadriven/jackson-geojson to support Jackon 2</description>
  
@@ -44,7 +44,9 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
             <configuration>
-                <release>11</release>
+                <!-- use Java 8 -->
+                <source>1.8</source>
+                <target>1.8</target>
             </configuration>
         </plugin>
     </plugins>
